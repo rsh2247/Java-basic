@@ -13,6 +13,9 @@ public class Player {
 	public float getrecord() {
 		return this.record;
 	}
+	public String getname() {
+		return this.name;
+	}
 	
 	void show() {
 		System.out.println("¿Ã∏ß: "+name);

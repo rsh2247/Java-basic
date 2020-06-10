@@ -22,14 +22,20 @@ public class RaceApp {
 			for(int i=0;i<player.length-1;i++) {
 				if(records[i]>records[i+1]) {
 					float temp = records[i];
+					String temp2 = player[i].getname();
+					player[i].setrecord(records[i+1]);
+					player[i].setname(player[i+1].getname());
 					records[i] = records[i+1];
+					player[i+1].setrecord(temp);
+					player[i+1].setname(temp2);
 					records[i+1] = temp;
 				}
 			}
 		}
 		System.out.println("기록순서");
 		for(int i=0;i<player.length;i++) {
-			System.out.println(records[i]);
+			System.out.println(i+1+"등 ");
+			player[i].show();
 		}
 
 	}
