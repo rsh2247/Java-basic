@@ -10,15 +10,15 @@ public class Player {
 	public void setrecord(float record) {
 		this.record = record;
 	}
-	public float getrecord() {
-		return this.record;
-	}
 	public String getname() {
 		return this.name;
 	}
+	public float getrecord() {
+		return this.record;
+	}
 	
 	void show() {
-		System.out.println("¿Ã∏ß: "+name);
-		System.out.println("±‚∑œ: "+record+"√ ");
+		System.out.println("Ïù¥Î¶Ñ: "+name);
+		System.out.println("Í∏∞Î°ù: "+record+"Ï¥à");
 	}
 }

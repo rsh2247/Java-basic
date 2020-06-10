@@ -8,9 +8,9 @@ public class UpandDown {
 	static void number() {
 		Random random = new Random();
 		Scanner scan = new Scanner(System.in);
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		int number = random.nextInt(scan.nextInt());
-		System.out.println("¼ıÀÚ¸¦ ¸ÂÃçº¸¼¼¿ä.");
+		System.out.println("ìˆ«ìë¥¼ ë§ì¶°ë³´ì„¸ìš”.");
 		boolean okay = true;
 		while(okay) {
 			int mynumber = scan.nextInt();
@@ -19,20 +19,20 @@ public class UpandDown {
 			}else if(number<mynumber){
 				System.out.println("down");
 			}else {
-				System.out.println("Á¤´äÀÔ´Ï´Ù.");
+				System.out.println("ì •ë‹µì…ë‹ˆë‹¤.");
 				okay = false;
 			}
 		}for(int i=1;i<2;i++) {
-			System.out.println("´Ù½ÃÇÏ½Ã°Ú½À´Ï±î? y/n");
+			System.out.println("ë‹¤ì‹œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? y/n");
 			String ans = scan.next();
 			if(ans.equals("y")||ans.equals("Y")) {
-				System.out.println("Àç½ÃÀÛ");
+				System.out.println("ì¬ì‹œì‘");
 				number();
 			}else if(ans.equals("n") || ans.equals("N")) {
 				okay = false;
-				System.out.println("±×¸¸");
+				System.out.println("ì¢…ë£Œ");
 			}else {
-				System.out.println("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+				System.out.println("ì •í™•íˆ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
 				i=i-1;
 			}
 		}	
