@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class RaceApp {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("¼±¼ö ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì„ ìˆ˜ ìˆ˜ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 		Player[] player = new Player[scan.nextInt()];
 		for(int i=0;i<player.length;i++) {
 			player[i] = new Player();
-			System.out.println("ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.");
 			player[i].setname(scan.next());
-			System.out.println("±â·ÏÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("ê¸°ë¡ì„ ìž…ë ¥í•˜ì„¸ìš”.");
 			player[i].setrecord(scan.nextFloat());
 		}		
 		for(int i=0;i<player.length;i++) {
@@ -25,9 +25,9 @@ public class RaceApp {
 				}
 			}
 		}
-		System.out.println("±â·Ï¼ø¼­");
+		System.out.println("ê¸°ë¡ìˆœì„œ");
 		for(int i=0;i<player.length;i++) {
-			System.out.println(i+1+"µî ");
+			System.out.println(i+1+"ë“± ");
 			player[i].show();
 		}
 	}
